@@ -3,13 +3,17 @@ import FB from "../assets/FB.png";
 import linkedin from "../assets/linkedin.png";
 import Twitter from "../assets/Twitter.png";
 import ReactModal from "react-modal";
+import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import App from "../App";
 
 const Contact = ({clickState , setClickState}) => {
 
+    const navigate = useNavigate();
     
 
   return (
-    <div className="relative align-left mx-auto gap-2 flex flex-col  items-center  z-80 w-[450px] h-[400px] rounded-md bg-[#7f746f]  ">
+    <div className="relative align-left top-[-50%] mx-auto gap-2 flex flex-col  items-center z-30 w-[450px] h-[400px] rounded-md bg-[#7f746f]  ">
       <button className="absolute z-30 right-3 ">X</button>
       <p className="text-[42px] text-[#495057]">Contact</p>
       <p className="text-[#ADB5BD] text-[12px]">
@@ -44,7 +48,7 @@ const Contact = ({clickState , setClickState}) => {
       </div>
 
       <div className="right-2">
-        <button onClick={setClickState(false)} className="px-3 py-3 bg-black text-white rounded-md   ">SUBMIT</button>
+        <button onClick={navigate(-1)} className="px-3 py-3 bg-black text-white rounded-md">SUBMIT</button>
       </div>
       <div className="flex">
         <p>Need more info? hello@newzera.com</p>

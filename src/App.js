@@ -5,11 +5,10 @@ import RightSection from "./components/RightSection";
 
 function App() {
   return (
-    <div className="bg-[#FDE3D9] relative flex h-[810px]  ">
+    <div className="bg-[#FDE3D9] relative flex flex-wrap h-[810px]  ">
       <Navbar></Navbar>
       <RightSection />
-      <LeftSection/>
-
+      <LeftSection />
     </div>
   );
 }

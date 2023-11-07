@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel'
 import Group2 from '../assets/Group2.png'
 import Group from "../assets/Group.png";
 import HeroSlider from 'hero-slider/dist/HeroSlider';
+import { Slide } from 'hero-slider';
 
 const LeftSection = () => {
   return (
@@ -14,12 +15,16 @@ const LeftSection = () => {
           industry.
         </p>
       </div>
-          <HeroSlider className="relative"
-          slidingAnimation="left_to_right"
-          >
-        <img src={Group} className="sliderimg bg-no-repeat" />
-        <img src={Group} className="sliderimg bg-no-repeat" />
-      </HeroSlider>
+      <AliceCarousel
+        
+      >
+        
+          <img src={Group} className="sliderimg bg-no-repeat" />
+      
+      
+          <img src={Group} className="sliderimg bg-no-repeat" />
+      
+      </AliceCarousel>
     </div>
   );
 }

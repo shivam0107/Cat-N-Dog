@@ -13,14 +13,9 @@ const Navbar = () => {
         <img src={Logo} width={160} height={32} loading="lazy" />
       </Link>
 
-          {
-              clickState === true ? (<Routes>
+                <Routes>
                     <Route path="/contact" element={<Contact clickState={clickState} setClickState={setClickState} />}></Route>
-              </Routes>) : (
-                      <div></div>
-              )
-              
-          }
+              </Routes>
 
       <nav>
         <ul className="flex gap-x-6 text-white">
